@@ -1,0 +1,75 @@
+{
+  "compilerOptions": {
+      "baseUrl": ".",
+      "target": "es2018",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "outDir": "build",
+      "strict": true,
+      "allowSyntheticDefaultImports": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "noUnusedParameters": false,
+      "strictNullChecks": true,
+      "declaration": true,
+      "esModuleInterop": true,
+      "sourceMap": true,
+      "forceConsistentCasingInFileNames": true,
+      "noImplicitAny": true,
+      "noImplicitReturns": true,
+      "removeComments": true,
+      "strictFunctionTypes": true,
+      "pretty": true,
+      "typeRoots": [
+        "@types",
+        "node_modules/@types"
+      ],
+      "paths": {
+          "@/app/*": [
+              "app/*"
+          ],
+          "@/services": [
+            "app/services/index"
+          ],
+          "@/errors": [
+            "app/errors/index"
+          ],
+          "@/queues": [
+            "app/queues/index"
+          ],
+          "@/models": [
+            "app/shared/models/index"
+          ],
+          "@/controllers": [
+            "app/controllers/index"
+          ],
+          "@/database": [
+            "database/index"
+          ],
+          "@/entities": [
+            "database/entities/index"
+          ],
+          "@/middlewares": [
+            "app/middlewares/index"
+          ],
+          "@/types": [
+            "app/shared/types/index"
+          ],
+          "@/contracts": [
+            "app/shared/contracts/index"
+          ],
+          "@/validators": [
+            "app/validators/index"
+          ],
+          "@/util": [
+            "app/shared/util/index"
+          ],
+          "@/config": [
+              "config/index"
+          ]
+      }
+  },
+  "exclude": [
+      "node_modules"
+  ]
+}
